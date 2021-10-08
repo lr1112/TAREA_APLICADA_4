@@ -1,0 +1,30 @@
+﻿<Window x:Class="Tarea4Aplicada.Ejercicios_Capitulo_8_y_Capitulo_9.Capi9Ejercicio1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea4Aplicada.Ejercicios_Capitulo_8_y_Capitulo_9"
+        mc:Ignorable="d"
+        Title="Capi9Ejercicio1" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,0">
+            <StackPanel Orientation="Horizontal" Margin="10,10">
+                <Label Content="Nombre del producto"/>
+                <TextBox x:Name="ProductoTextBox" Width="80" Height="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Cantidad Producto"/>
+                <TextBox x:Name="CantidadTextBox" Width="80" Height="20" Margin="15,0"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0">
+                <Label Content="Precio Producto" Margin="0,10"/>
+                <TextBox x:Name="PrecioTextBox" Width="80" Height="20" Margin="30,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="30,30">
+                <Button x:Name="AceptarButton" Content="Aceptar" Margin="20,30" Width="50" Click="AceptarButton_Click"/>
+                <Button x:Name="LimpiarButton" Content="Limpiar" Margin="20,30" Width="50" Click="LimpiarButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
